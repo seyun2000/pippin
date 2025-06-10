@@ -673,7 +673,7 @@ header {
 
 .phone {
     position: absolute;
-    top: 262px;
+    top: 242px;
     left: calc(50% - 316px / 2);
     width: 316px;
     height: 671px;
@@ -695,7 +695,7 @@ header {
 .play_content {
     max-width: 500px;
     position: absolute;
-    top: 130px;
+    top: 110px;
     left: 300px;
     color: #fff;
     padding: 152px 0;
@@ -728,7 +728,7 @@ header {
     position: absolute;
     width: 290px;
     height: 590px;
-    top: 314px;
+    top: 294px;
     left: calc(50% - 290px / 2);
 }
 
@@ -745,7 +745,7 @@ header {
 .pippin_play_slide {
     position: absolute;
     max-width: 500px;
-    top: 466px;
+    top: 446px;
     left: 1175px;
     color: #fff;
 }
@@ -785,7 +785,7 @@ header {
     position: absolute;
     width: 128px;
     height: 720px;
-    top: 198px;
+    top: 178px;
     left: 1401px;
     border-top: #fff solid 1px;
     border-bottom: #fff solid 1px;
