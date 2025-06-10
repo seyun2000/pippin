@@ -635,6 +635,14 @@ header {
     text-align: center;
 }
 
+.allgm .viewall{
+    z-index: 10;
+}
+
+.viewall_X{
+    z-index: 0;
+}
+
 .allgm .viewall a, .viewall_X a {
     display: inline-block;
     width: 100px;
