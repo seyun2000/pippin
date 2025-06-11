@@ -221,14 +221,18 @@ header {
 }
 
 /* about us */
+.about_bg {
+    padding-top: 100px;
+    background: #F5F5F5 url(../images/about/about_main/about_main.png) no-repeat 100% 50%;
+    background-size: 60%;
+}
+
 #about {
     max-width: 1320px;
     height: 660px;
-    margin: 30px auto 0;
+    margin: auto;
     position: relative;
     box-sizing: border-box;
-    background: url(../images/about/about_main/about_main.png) no-repeat center center;
-    background-size: 1320px, 660px;
 }
 
 #about h2 {
@@ -265,7 +269,7 @@ header {
     display: block;
     width: 224px;
     height: 40px;
-    margin: 0 auto 90px;
+    margin: auto;
     color: #fff;
     background-color: #2C2C2C;
     border-radius: 100px;
@@ -303,12 +307,9 @@ header {
 }
 
 /* our games */
-#games {
-    padding-top: 10px;
-}
 
 .games_background {
-    padding-top: 100px;
+    padding-top: 200px;
     background-color: #F5F5F5;
 }
 
