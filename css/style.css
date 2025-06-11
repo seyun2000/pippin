@@ -35,14 +35,36 @@ h2 {
     font-size: 40px;
 }
 
+img {
+    -webkit-user-drag: none;
+    /* Safari, Chrome */
+    -khtml-user-drag: none;
+    /* Konqueror */
+    -moz-user-drag: none;
+    /* Firefox */
+    -o-user-drag: none;
+    /* Opera */
+    /* user-drag: none; */
+    /* Standard */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 /* 헤더 */
-header {
-    min-width: 1920px;
+#header_wrap {
     position: fixed;
     z-index: 5000;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    transition: top 0.3s ease;
+}
+
+header {
+    min-width: 1920px;
     background: #fff;
 }
 
@@ -243,7 +265,7 @@ header {
     display: block;
     width: 224px;
     height: 40px;
-    margin: auto;
+    margin: 0 auto 90px;
     color: #fff;
     background-color: #2C2C2C;
     border-radius: 100px;
@@ -282,7 +304,7 @@ header {
 
 /* our games */
 #games {
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 .games_background {
@@ -300,15 +322,17 @@ header {
 }
 
 .games_in h3 {
+    font-size: 30px;
     display: inline-block;
-    width: 111px;
-    height: 50px;
-    border-radius: 10px;
+    /* width: 111px;
+    height: 50px; */
     box-sizing: border-box;
-    color: #fff;
-    background-color: #5AB2EA;
+    color: #333;
+    /* background-color: #5AB2EA; */
     text-align: center;
-    padding-top: 11px;
+    /* padding-top: 11px; */
+    padding-top: 3px;
+    padding-left: 10px;
 }
 
 /* recogame */
@@ -627,7 +651,8 @@ header {
     color: #FFCC37;
 }
 
-.allgm .viewall, .viewall_X {
+.allgm .viewall,
+.viewall_X {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -635,15 +660,16 @@ header {
     text-align: center;
 }
 
-.allgm .viewall{
+.allgm .viewall {
     z-index: 10;
 }
 
-.viewall_X{
+.viewall_X {
     z-index: 0;
 }
 
-.allgm .viewall a, .viewall_X a {
+.allgm .viewall a,
+.viewall_X a {
     display: inline-block;
     width: 100px;
     height: 25px;
@@ -657,7 +683,8 @@ header {
     transition: 0.3s;
 }
 
-.allgm .viewall a:hover, .viewall_X a:hover {
+.allgm .viewall a:hover,
+.viewall_X a:hover {
     background-color: #FFCC37;
 }
 
@@ -720,8 +747,21 @@ header {
     padding-bottom: 30px;
 }
 
-.play_content .goggleplay {
+.play_content .googleplay {
+    display: inline-block;
     padding-right: 10px;
+}
+
+.play_content .googleplay img {
+    display: block;
+}
+
+.play_content .appstore {
+    display: inline-block;
+}
+
+.play_content .appstore img {
+    display: block;
 }
 
 .phone_content {
@@ -977,11 +1017,13 @@ ul.community_lnb>li.cm_on a {
     display: block;
     width: 400px;
     height: 700px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    border: 1px solid #ccc;
     color: #fff;
     text-align: center;
     overflow: hidden;
-    transition: background-size .5s ease;
+    /* transition: background-size .5s ease; */
+    transition: 0.5s;
 }
 
 #community_menu1 .swiper-wrapper .swiper-slide a:hover {
@@ -1060,6 +1102,7 @@ ul.community_lnb>li.cm_on a {
     gap: 20px 30px;
     height: 830px;
     overflow: hidden;
+    padding-top: 5px;
 }
 
 .event_menu li {
@@ -1071,7 +1114,7 @@ ul.community_lnb>li.cm_on a {
     width: 100%;
     height: 100%;
     display: block;
-    box-shadow: 0 0 10px 0 #ccc;
+    box-shadow: 0 0 5px 0 #ccc;
     transition: 0.3s;
 }
 
@@ -1191,7 +1234,7 @@ ul.community_lnb>li.cm_on a {
 }
 
 .event_menu li a:hover {
-    box-shadow: 0 0 10px 0 #aaa;
+    box-shadow: 0 0 5px 0 #999;
 }
 
 .event_btn {
@@ -1243,7 +1286,7 @@ ul.community_lnb>li.cm_on a {
     position: relative;
     width: 1096px;
     height: 576px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     margin: 0 auto 30px;
     color: #fff;
     text-align: center;
@@ -1276,14 +1319,14 @@ ul.community_lnb>li.cm_on a {
     inset: 0;
     z-index: 1;
     overflow: hidden;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 .cm3_img img {
     display: block;
     width: 100%;
     overflow: hidden;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     transition: 0.3s;
 }
 
@@ -1291,7 +1334,7 @@ ul.community_lnb>li.cm_on a {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     inset: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.3);
@@ -1316,7 +1359,7 @@ ul.community_lnb>li.cm_on a {
 
 #community_menu3 a:hover .cm3_background {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 /* best goods */
@@ -1428,9 +1471,9 @@ ul.community_lnb>li.cm_on a {
     width: 320px;
     height: 350px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-sizing: border-box;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-left: 41px;
 }
 
@@ -1478,7 +1521,7 @@ ul.community_lnb>li.cm_on a {
 .join_text a {
     display: inline-block;
     padding: 13px 27px;
-    border-radius: 10px;
+    border-radius: 100px;
     font-size: 20px;
     color: #fff;
     background-color: #333;
@@ -1856,7 +1899,7 @@ ul.community_lnb>li.cm_on a {
     font-weight: 400;
     transition: 0.2s;
     background-color: #fff;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 1px solid #eaeaea;
 }
 
@@ -1864,7 +1907,7 @@ ul.community_lnb>li.cm_on a {
     background-color: #FFCC37;
     color: #fff;
     font-weight: 600;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .faq_content .chatbot {
@@ -1956,7 +1999,7 @@ ul.community_lnb>li.cm_on a {
 .security ul li:nth-child(1) {
     width: 350px;
     height: 250px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 1px solid #ccc;
     box-sizing: border-box;
     background-color: #fff;
@@ -1998,7 +2041,7 @@ ul.community_lnb>li.cm_on a {
     display: block;
     width: 350px;
     height: 250px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 1px solid #ccc;
     box-sizing: border-box;
     background-color: #fff;
@@ -2045,20 +2088,18 @@ ul.community_lnb>li.cm_on a {
     bottom: 50px;
     right: 50px;
     display: block;
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     box-sizing: border-box;
-    background-color: #fff;
-    border: 2px solid #ccc;
+    background-color: #eee;
+    border: 2px solid #eee;
     color: #333;
     text-align: center;
-    padding-top: 5px;
     font-size: 20px;
     font-weight: 500;
-}
-
-.top a img {
-    padding-right: 10px;
+    border-radius: 50%;
+    padding-top: 10px;
+    line-height: 22px;
 }
 
 .top a:hover {
@@ -2103,6 +2144,7 @@ footer {
     box-sizing: border-box;
     padding: 8px 15px;
     transition: 0.3s;
+    /* border-radius: 10px; */
 }
 
 .language h4 a:hover {
