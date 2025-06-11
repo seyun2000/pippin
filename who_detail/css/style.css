@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    min-width: 1320px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    font-family: 'SBAggroB';
+    font-size: 64px;
+}
+
+h2 {
+    color: #5AB2EA;
+    font-family: 'SBAggroB';
+    font-size: 40px;
+}
+
+/* 헤더 */
+header {
+    min-width: 1920px;
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+.header_in {
+    max-width: 1320px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_in>a>img {
+    display: block;
+}
+
+.header_menu {
+    display: flex;
+    font-family: 'SBAggroB';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header_menu li a {
+    display: block;
+    padding: 25px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.header_menu li a:hover {
+    background-color: #5AB2EA;
+    color: #fff;
+}
+
+.sign {
+    display: flex;
+    font-size: 20px;
+}
+
+.sign li:nth-child(2) a {
+    border: #ccc 1px solid;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.sign li:nth-child(1) a,
+.sign li:nth-child(2) a {
+    display: block;
+    text-align: center;
+    width: 100px;
+    /* height: 32px; */
+    padding: 5px 0 3px;
+}
+
+.sign li:nth-child(1) a:hover {
+    font-weight: 500;
+}
+
+.sign li:nth-child(2) a:hover {
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* 비주얼 */
+#visual {
+    position: relative;
+}
+
+#visual .visual {
+    max-width: 1920px;
+    min-width: 1920px;
+}
+
+#visual .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#visual .swiper-slide {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visual .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#visual .swiper-slide h1 {
+    position: absolute;
+    top: calc(519px - 251px / 2);
+    left: 300px;
+    color: #fff;
+    line-height: 1.35;
+}
+
+#visual .swiper-pagination-bullet {
+    width: 440px;
+    height: 100px;
+    box-sizing: border-box;
+    color: #000;
+    opacity: 1;
+    background: #fff;
+    border: 1px solid rgba(181, 181, 181, 0.3);
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+#visual .swiper-pagination-bullet div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#visual .swiper-pagination-bullet div h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#visual .swiper-pagination-bullet div p {
+    /* font-size: 16px; */
+    font-weight: 300;
+}
+
+#visual .swiper-pagination-bullet div h3 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#visual .swiper-pagination-bullet-active,
+#visual .swiper-pagination-bullet:hover {
+    color: #fff;
+    background: #2C2C2C;
+}
+
+#visual .swiper-horizontal>.swiper-pagination-bullets,
+#visual .swiper-pagination-bullets.swiper-pagination-horizontal,
+#visual .swiper-pagination-custom,
+#visual .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 0px);
+}
+
+#visual .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+#visual .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0px);
+}
+
+/* about sub */
+.about_subtext {
+    width: 1096px;
+    margin: 100px auto 0;
+}
+
+#about_sub h2 {
+    padding-bottom: 20px;
+}
+
+#about_sub p {
+    padding-bottom: 25px;
+}
+
+#about_sub b {
+    padding: 75px 0 100px;
+    display: block;
+    text-align: center;
+}
+
+/* Container DIV - automatically generated */
+.simply-scroll-container {
+    position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip {
+    position: relative;
+    overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.simply-scroll-list li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.simply-scroll-list li img {
+    border: none;
+    display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll {
+    width: 1920px;
+    height: 400px;
+    margin: 0 auto 1em;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+    width: 100%;
+    height: 100%;
+}
+
+/* Explicitly set height/width of each list item */
+.simply-scroll .simply-scroll-list li {
+    float: left;
+    /* Horizontal scroll only */
+    width: 300px;
+    height: 400px;
+}
+
+#scroller li img {
+    width: 100%;
+    height: 300px;
+}
+
+#scroller li:nth-child(1),
+#scroller li:nth-child(3),
+#scroller li:nth-child(6),
+#scroller li:nth-child(8),
+#scroller li:nth-child(10),
+#scroller li:nth-child(13) {
+    transform: translateY(50px);
+}
+
+/* purpose */
+.purpose {
+    width: 1096px;
+    margin: 150px auto;
+}
+
+#about_sub .purpose h2 {
+    padding-bottom: 10px;
+}
+
+.pur_main {
+    position: relative;
+    width: 1096px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background: url(../images/purpose/purpose1.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+.pur_main h3 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 170px;
+}
+
+.pur_main h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.pur_main img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 10;
+    display: block;
+}
+
+.pur_sub {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px 0;
+}
+
+.pur_sub .purtext h5 {
+    color: #FFCC37;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 27px;
+}
+
+.pur_sub .purtext h3 {
+    font-size: 54px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.pur_sub .purtext h4 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.pur_sub .purtext p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pur_sub .pur_right {
+    text-align: right;
+}
+
+.pur_sub .purimg {
+    width: 400px;
+    height: 400px;
+}
+
+.pur_sub .purimg img {
+    display: block;
+    width: 100%;
+}
