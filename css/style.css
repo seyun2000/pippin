@@ -782,6 +782,7 @@ header {
 }
 
 .phone_content ul {
+    padding-top: 10px;
     display: flex;
 }
 
