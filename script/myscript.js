@@ -1,4 +1,24 @@
+// header 스크롤 숨기기
+let lastScrollTop = 0;
+const header = document.getElementById("header_wrap");
+
+window.addEventListener("scroll", function () {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // 아래로 스크롤 → 헤더 숨기기
+        header.style.top = "-80px";
+    } else {
+        // 위로 스크롤 → 헤더 보이기
+        header.style.top = "0";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // 모바일 bounce 방지
+});
+
+
 //   <!-- visual js -->
+// pagination 커스텀
 var visual_gamename = ['펭귄의 섬', '로얄 킹덤', '블록 블라스트'];
 var visual_duration = ['05/19 ~ 05/29', '05/17', '05/25'];
 var visual_headline = ['디저트 파티 이벤트 개최', '최고의 퍼즐 게임 어워드 수상', '새로운 챌린지 모드 업데이트'];
@@ -20,6 +40,7 @@ var visual = new Swiper(".visual", {
 });
 
 //   <!-- our games - recogames js -->
+// 추천게임 스와이퍼
 var recogm = new Swiper(".recogm", {
     slidesPerView: "auto",
     spaceBetween: 35,
@@ -35,7 +56,7 @@ var recogm = new Swiper(".recogm", {
 });
 
 //   <!-- allgame js -->
-// 버튼 클릭하면 길이 늘어났다가 줄어드는 제이쿼리
+// 버튼 클릭하면 길이 늘어났다가 줄어드는 js
 
 $(function () {
     $(".viewall a").click(function () {
@@ -57,7 +78,8 @@ $(function () {
 });
 
 //   <!-- pippin play js -->
-
+// 버튼 슬라이드 하나만 누르면 나머지 슬라이드도 따라서 움직이는 js
+// 다른 슬라이드는 클릭이나 드래그해도 움직이지 않고 버튼 슬라이드만 클릭해야지 움직일 수 있음
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -74,6 +96,7 @@ $('.slider-for2').slick({
     // fade: true,
     asNavFor: '.slider-nav',
 });
+// 버튼 슬라이드
 $('.slider-nav').slick({
     vertical: true,
     slidesToShow: 6,
@@ -86,6 +109,7 @@ $('.slider-nav').slick({
 });
 
 //   <!-- community js -->
+// news, event, story를 누를 때마다 해당 창이 뜨는 js
 $(function () {
     $('ul.community_lnb li').click(function () {
         var communityTab = $(this).attr('data-tab');
@@ -105,8 +129,7 @@ var cm_news = new Swiper(".cm_news", {
     },
 });
 
-{/* // 버튼 클릭하면 길이 늘어났다가 줄어드는 제이쿼리 */ }
-
+/* // 버튼 클릭하면 길이 늘어났다가 줄어드는 js */
 $(function () {
     $(".event_btn a").click(function () {
         $(".event_menu").animate({
@@ -127,6 +150,7 @@ $(function () {
 });
 
 //   <!-- best goods js -->
+// 호버하면 슬라이드가 멈추고 떼면 다시 움직이는 js
 $(function () {
     $("#best_goods a").hover(
         function () {
@@ -139,6 +163,7 @@ $(function () {
 });
 
 //   <!-- notice js -->
+// 조회순 버튼을 누르면 조회순과 날짜순이 보이는 js
 $(function () {
     $(".filter button").click(function () {
         $(".filter .filter_option").fadeToggle(400);
@@ -148,6 +173,7 @@ $(function () {
 });
 
 //   <!-- FAQ & SEC js -->
+// 자주 묻는 질문이 하나씩 뜨는 js
 AOS.init({
     duration: 1000,
     offset: 150,
@@ -155,6 +181,7 @@ AOS.init({
 });
 
 //   <!-- language js -->
+// 언어 메뉴가 슬라이드 되는 js
 $(function () {
     $(".language h4 a").click(function () {
         $("#language_list").slideToggle(400);
