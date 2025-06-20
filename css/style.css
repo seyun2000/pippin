@@ -83,7 +83,6 @@ header {
 .header_menu {
     display: flex;
     font-family: 'SBAggroB';
-    font-weight: bold;
     font-size: 20px;
 }
 
