@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./css/slick-theme.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Pippin</title>
 </head>
@@ -73,17 +75,18 @@
   <!-- about us -->
   <div class="about_bg">
     <div id="about">
-      <h2>ABOUT US</h2>
-      <img class="about_object2" src="./images/about/about_main/rowpippin.png" alt="피핀 로고 검은색">
-      <h3>피핀은 언제나 즐거운 게임만을 생각합니다!</h3>
-      <p>
+      <h2 data-aos="fade-up">ABOUT US</h2>
+      <img data-aos="fade-up" class="about_object2" src="./images/about/about_main/rowpippin.png" alt="피핀 로고 검은색">
+      <h3 data-aos="fade-up">피핀은 언제나 즐거운 게임만을 생각합니다!</h3>
+      <p data-aos="fade-up">
         2021년 설립된 피핀은 자유롭고 창의적인 개발문화, <br>
         단기간 압도적인 성장세와 유저친화적 정책으로 <br>
         글로벌 종합 엔터테인먼트 기업으로 거듭나고 있습니다.
       </p>
-      <img class="about_object1" src="./images/about/about_main/about_main_object.png" alt="about 블록 이미지">
+      <img data-aos="fade-up" class="about_object1" src="./images/about/about_main/about_main_object.png"
+        alt="about 블록 이미지">
     </div>
-    <a class="about_btn" href="./who_detail/index.html">
+    <a data-aos="fade-up" class="about_btn" href="./who_detail/index.html">
       <ul>
         <li>Are you curious?</li>
         <li><img src="./images/about/about_main/about_arrow.png" alt="about 버튼 화살표"></li>
@@ -95,9 +98,9 @@
   <div id="games">
     <div class="games_background">
       <div class="games_in">
-        <h2>OUR GAMES</h2>
+        <h2 data-aos="fade-up">OUR GAMES</h2>
         <!-- recogame -->
-        <div class="swiper recogm">
+        <div data-aos="fade-up" class="swiper recogm">
           <h3>추천게임</h3>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -168,7 +171,7 @@
           <div class="swiper-button-prev custom_prev"></div>
         </div>
         <!-- allgame -->
-        <div class="allgm">
+        <div data-aos="fade-up" class="allgm">
           <h3>전체게임</h3>
           <div class="viewtype">
             <input type="radio" name="viewtype" id="allgame_menu" checked="checked">
@@ -236,8 +239,6 @@
                 <input type="radio" name="genre" id="mini">
                 <label for="mini" class="button_minigame">#미니게임</label>
               </span>
-            </p>
-            <p>
               <span>
                 <input type="radio" name="genre" id="action">
                 <label for="action" class="button_actiongame">#액션</label>
@@ -246,6 +247,8 @@
                 <input type="radio" name="genre" id="adventure">
                 <label for="adventure" class="button_adventuregame">#어드벤처</label>
               </span>
+            </p>
+            <p>
               <span>
                 <input type="radio" name="genre" id="rpg">
                 <label for="rpg" class="button_rpggame">#RPG</label>
@@ -433,6 +436,45 @@
                 </div>
               </a>
             </li>
+            <li class="hidden_box">
+              <a href="#none">
+                <div class="allgm_imgbox">
+                  <img src="#none" alt="미정">
+                </div>
+                <div class="allgm_textbox">
+                  <h4>미정</h4>
+                  <p>
+                    #미정
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="hidden_box">
+              <a href="#none">
+                <div class="allgm_imgbox">
+                  <img src="#none" alt="미정">
+                </div>
+                <div class="allgm_textbox">
+                  <h4>미정</h4>
+                  <p>
+                    #미정
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="hidden_box">
+              <a href="#none">
+                <div class="allgm_imgbox">
+                  <img src="#none" alt="미정">
+                </div>
+                <div class="allgm_textbox">
+                  <h4>미정</h4>
+                  <p>
+                    #미정
+                  </p>
+                </div>
+              </a>
+            </li>
           </ul>
           <p class="viewall">
             <a href="#none">view all</a>
@@ -447,11 +489,11 @@
 
   <!-- pippin play -->
   <div id="pippin_play">
-    <div class="pippin_play_in">
+    <div data-aos="fade-up" class="pippin_play_in">
       <div class="play_content">
         <h2>PIPPIN PLAY</h2>
-        <h1>피핀 게이머의 <br>
-          필수 앱</h1>
+        <h3>피핀 게이머의 <br>
+          필수 앱</h3>
         <p>
           게임 소식, 계정 보안, 플레이포인트 적립과 <br>
           상점, 피핀캐시 충전 등 다양한 게임 혜택을 <br>
@@ -655,10 +697,10 @@
   </div>
 
   <!-- community -->
-  <div id="community">
+  <div data-aos="fade-up" data-aos-offset="400" id="community">
     <h2>COMMUNITY</h2>
     <ul class="community_lnb">
-      <li class="cm_on" data-tab="community_menu1"><a href="#none">News</a></li>
+      <li data-tab="community_menu1" class="cm_on"><a href="#none">News</a></li>
       <li data-tab="community_menu2"><a href="#none">Event</a></li>
       <li data-tab="community_menu3"><a href="#none">Story</a></li>
     </ul>
@@ -667,62 +709,74 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="#none">
-            <h3>피핀, ‘게임 제작 전시회’ 개최</h3>
-            <h4>
-              “떡잎부터 키운다” <br>
-              피핀, 미래 IT 인재 양성 위한 청년 지원 앞장
-            </h4>
-            <p>2023/03/26~2023/04/02</p>
+            <div>
+              <h3>피핀, ‘게임 제작 전시회’ 개최</h3>
+              <h4>
+                “떡잎부터 키운다” <br>
+                피핀, 미래 IT 인재 양성 위한 청년 지원 앞장
+              </h4>
+              <p>2023/03/26~2023/04/02</p>
+            </div>
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#none">
-            <h3>피핀, 서울 강남에 지사 건설</h3>
-            <h4>
-              인프라 확립과 새로운 도전, <br>
-              서버 증축 통해 쾌적한 게임 환경 기대
-            </h4>
-            <p>2024/09/17</p>
+            <div>
+              <h3>피핀, 서울 강남에 지사 건설</h3>
+              <h4>
+                인프라 확립과 새로운 도전, <br>
+                서버 증축 통해 쾌적한 게임 환경 기대
+              </h4>
+              <p>2024/09/17</p>
+            </div>
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#none">
-            <h3>피핀, 4주년 기념 미디어 아트</h3>
-            <h4>
-              피핀 창업 4주년 맞아 <br>
-              남산서울타워서 미디어아트 선보여
-            </h4>
-            <p>2025/02/08</p>
+            <div>
+              <h3>피핀, 4주년 기념 미디어 아트</h3>
+              <h4>
+                피핀 창업 4주년 맞아 <br>
+                남산서울타워서 미디어아트 선보여
+              </h4>
+              <p>2025/02/08</p>
+            </div>
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#none">
-            <h3>피핀, 구글 `창구 프로그램` 참여</h3>
-            <h4>
-              구글의 마케팅 조언 덕분에… <br>
-              글로벌 경쟁력 실제로 높아졌죠
-            </h4>
-            <p>2025/03/22</p>
+            <div>
+              <h3>피핀, 구글 `창구 프로그램` 참여</h3>
+              <h4>
+                구글의 마케팅 조언 덕분에… <br>
+                글로벌 경쟁력 실제로 높아졌죠
+              </h4>
+              <p>2025/03/22</p>
+            </div>
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#none">
-            <h3>피핀, 미리 어린이날 행사</h3>
-            <h4>
-              가정의 달 맞아 사내 어린이집 행사 개최 <br>
-              도토리파크에 다같이 놀러가요!
-            </h4>
-            <p>2025/04/28</p>
+            <div>
+              <h3>피핀, 미리 어린이날 행사</h3>
+              <h4>
+                가정의 달 맞아 사내 어린이집 행사 개최 <br>
+                도토리파크에 다같이 놀러가요!
+              </h4>
+              <p>2025/04/28</p>
+            </div>
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#none">
-            <h3>피핀, 2025년 상반기 실적 발표</h3>
-            <h4>
-              2025년 국내 게임 업계 최초 연간 매출 4조 원 돌파 <br>
-              주력 IP 3종 매출 합계 전년 대비 10% 성장
-            </h4>
-            <p>2025/05/22</p>
+            <div>
+              <h3>피핀, 2025년 상반기 실적 발표</h3>
+              <h4>
+                2025년 국내 게임 업계 최초 연간 매출 4조 원 돌파 <br>
+                주력 IP 3종 매출 합계 전년 대비 10% 성장
+              </h4>
+              <p>2025/05/22</p>
+            </div>
           </a>
         </div>
       </div>
@@ -884,8 +938,7 @@
         <div class="cm3_background"></div>
         <div class="cm3_text">
           <h3>
-            Play MINIGAME <br>
-            with Pippin
+            Play MINIGAME with Pippin
           </h3>
           <h4>피핀 X 하비클럽 콜라보 후드티</h4>
           <p>17 April ~ 17 May 2025</p>
@@ -898,8 +951,7 @@
         <div class="cm3_background"></div>
         <div class="cm3_text">
           <h3>
-            Pippin <br>
-            Dev Family
+            Pippin Dev Family
           </h3>
           <h4>피핀의 소중한 개발자들을 소개합니다~</h4>
           <p>14 March ~ 3 April 2024</p>
@@ -909,8 +961,8 @@
   </div>
 
   <!-- best goods -->
-  <h2 class="best_goods_h">Best Goods</h2>
-  <div class="best_goods_hidden">
+  <h2 data-aos="fade-up" class="best_goods_h">Best Goods</h2>
+  <div data-aos="fade-up" class="best_goods_hidden">
     <div id="best_goods">
       <a href="#none" class="goods1">
         <div class="goods_img"><img src="./images/goods_shop/goods1.jpg" alt="피핀 키링"></div>
@@ -1071,53 +1123,34 @@
 
   <!-- hiring -->
   <div id="hiring">
-    <h2>HIRING</h2>
-    <ul>
+    <h2 data-aos="fade-up">HIRING</h2>
+    <ul data-aos="fade-up">
       <li>
         <img src="./images/hiring/collective.png" alt="콜렉티브 아이콘">
         <h4><span>C</span>OLLECTIVE</h4>
         <p>
-          좋은 회사는 좋은 사람으로 <br>
-          구성되어 있어야 된다고 생각합니다. <br>
-          그렇기에 갑과 을 관계가 아닌, <br>
-          동료로써의 인간적인 관계를 <br>
-          중요시합니다. <br>
+          좋은 회사는 좋은 사람으로 구성되어 있어야 된다고 생각합니다. 그렇기에 갑과 을 관계가 아닌, 동료로써의 인간적인 관계를 중요시합니다.
         </p>
       </li>
       <li>
         <img src="./images/hiring/relationship.png" alt="릴레이션쉽 아이콘">
         <h4><span>R</span>ELATIONSHIP</h4>
         <p>
-          리더들은 10년 이상의 경력으로 <br>
-          서로의 지식을 공유하고, <br>
-          성장을 돕는 문화를 가지고 있습니다. <br>
-          신입은 배우면서 성장하고, <br>
-          경력자는 게임에 집중하고 <br>
-          안정적으로 개발이 가능한 환경입니다. <br>
+          리더들은 7년 이상의 경력으로 서로의 지식을 공유하고, 성장을 돕는 문화를 가지고 있습니다. 신입은 배우면서 성장하고, 경력자는 게임에 집중하고 안정적으로 개발이 가능한 환경입니다.
         </p>
       </li>
       <li>
         <img src="./images/hiring/worklife.png" alt="워크라이프 아이콘">
         <h4><span>W</span>ORK &#45;<!-- 하이푼 "-" --> LIFE</h4>
         <p>
-          근무시간 내 신속하게 개발, <br>
-          야근과 주말 출근이 없고 <br>
-          퇴근 후 개인 생활 보장, <br>
-          회사 성과에 따라 인센티브 지급, <br>
-          회사 경영상황을 주기마다 <br>
-          투명하게 공유합니다.
+          근무시간 내 신속하게 개발, 야근과 주말 출근이 없고 퇴근 후 개인 생활 보장, 회사 성과에 따라 인센티브 지급, 회사 경영상황을 주기마다 투명하게 공유합니다.
         </p>
       </li>
       <li>
         <img src="./images/hiring/experience.png" alt="익스페리언스 아이콘">
         <h4><span>E</span>XPERIENCE</h4>
         <p>
-          글로벌 캐쥬얼 게임 시장에 <br>
-          다수의 게임을 출시하여 <br>
-          높은 인앱 및 광고 매출을 달성. <br>
-          도전을 통한 경험, 실수, 실패는 <br>
-          절대 책망하지 않습니다. <br>
-          어떤 일이라도 편하게 물어보세요. <br>
+          글로벌 캐쥬얼 게임 시장에 다수의 게임을 출시하여 높은 인앱 및 광고 매출을 달성했습니다. 도전을 통한 경험, 실수, 실패는 절대 책망하지 않습니다. 어떤 일이라도 편하게 물어보세요.
         </p>
       </li>
     </ul>
@@ -1125,23 +1158,23 @@
   <div id="join">
     <div class="join_in">
       <div class="join_text">
-        <h1>JOIN OUR <br> GROUND</h1>
-        <p>
+        <h1 data-aos="fade-up">JOIN OUR <br> GROUND</h1>
+        <p data-aos="fade-up" data-aos-offset="300">
           피핀은 상시 채용 중, <br>
           우리와 함께 즐겁게 일할 여러분들을 기다립니다.
         </p>
-        <a href="#none">채용 공고 보러가기</a>
+        <a data-aos="fade-up" data-aos-offset="300" href="#none">채용 공고 보러가기</a>
       </div>
-      <img src="./images/hiring/mascot.png" alt="펭귄 마스코트 이미지">
+      <img data-aos="fade-up" data-aos-offset="400" src="./images/hiring/mascot.png" alt="펭귄 마스코트 이미지">
     </div>
   </div>
 
   <!-- support -->
   <div id="support">
     <div id="faq_sec">
-      <h2>FAQ &#38; SECURITY</h2>
+      <h2 data-aos="fade-up">FAQ &#38; SECURITY</h2>
       <div class="faq">
-        <h4>자주 묻는 질문</h4>
+        <h4 data-aos="fade-up">자주 묻는 질문</h4>
         <div class="faq_content">
           <div data-aos="fade-up"><a href="#none">피핀 OTP 이용이 안 돼요</a></div>
           <div data-aos="fade-up"><a href="#none">피핀 플레이에 접속할 수 없어요</a></div>
@@ -1168,8 +1201,8 @@
         </div>
       </div>
       <div class="security">
-        <h4>보안 서비스</h4>
-        <ul>
+        <h4 data-aos="fade-up">보안 서비스</h4>
+        <ul data-aos="fade-up">
           <li>
             <h5>로그인 관리</h5>
             <p><a href="#none">비밀번호 변경하기</a><img src="./images/notice/security_arrow.png" alt="로그인관리 화살표"></p>
@@ -1226,7 +1259,7 @@
         </ul>
       </div>
     </div>
-    <div id="notice">
+    <div data-aos="fade-up" id="notice">
       <h2>NOTICE</h2>
       <div class="search2">
         <input type="text" placeholder="검색어를 입력하세요" id="notice_search">
@@ -1325,18 +1358,18 @@
       <div class="notice_pag">
         <a href="#none" class="notice_prev1"><span class="notice_pag_leftfar"></span></a>
         <a href="#none" class="notice_prev2"><span class="notice_pag_left"></span></a>
-        <span class="notice_number">
-          <b><span>1</span></b>
-          <a href="#none">2</a>
-          <a href="#none">3</a>
-          <a href="#none">4</a>
-          <a href="#none">5</a>
-          <a href="#none">6</a>
-          <a href="#none">7</a>
-          <a href="#none">8</a>
-          <a href="#none">9</a>
-          <a href="#none">10</a>
-        </span>
+        <ul class="notice_number">
+          <li class="notice_on"><a href="#none">1</a></li>
+          <li><a href="#none">2</a></li>
+          <li><a href="#none">3</a></li>
+          <li><a href="#none">4</a></li>
+          <li><a href="#none">5</a></li>
+          <li><a href="#none">6</a></li>
+          <li><a href="#none">7</a></li>
+          <li><a href="#none">8</a></li>
+          <li><a href="#none">9</a></li>
+          <li><a href="#none">10</a></li>
+        </ul>
         <a href="#none" class="notice_next2"><span class="notice_pag_right"></span></a>
         <a href="#none" class="notice_next1"><span class="notice_pag_rightfar"></span></a>
       </div>

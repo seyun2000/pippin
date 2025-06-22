@@ -117,7 +117,7 @@ $(function () {
         $('.cm_cont').removeClass('cm_on');
         $(this).addClass('cm_on');
         $('#' + communityTab).addClass('cm_on');
-    })
+    });
 });
 
 var cm_news = new Swiper(".cm_news", {
@@ -154,10 +154,10 @@ $(function () {
 $(function () {
     $("#best_goods a").hover(
         function () {
-            $("#best_goods").css("animation-play-state", "paused")
+            $("#best_goods").css("animation-play-state", "paused");
         },
         function () {
-            $("#best_goods").css("animation-play-state", "running")
+            $("#best_goods").css("animation-play-state", "running");
         }
     );
 });
@@ -166,9 +166,17 @@ $(function () {
 // 조회순 버튼을 누르면 조회순과 날짜순이 보이는 js
 $(function () {
     $(".filter button").click(function () {
-        $(".filter .filter_option").fadeToggle(400);
+        $(".filter .filter_option").fadeToggle(300);
         // $(".filter .filter_option").css("display", "block");
         $(".filter .filter_icon").toggleClass("icon_button_on");
+    });
+});
+
+// 클릭하면 다른 번호로 이동하는 js
+$(function () {
+    $('ul.notice_number li').click(function () {
+        $('ul.notice_number li').removeClass('notice_on');
+        $(this).addClass('notice_on');
     });
 });
 
@@ -176,7 +184,7 @@ $(function () {
 // 자주 묻는 질문이 하나씩 뜨는 js
 AOS.init({
     duration: 1000,
-    offset: 150,
+    offset: 200,
     easing: 'ease-out-back',
 });
 
@@ -185,5 +193,5 @@ AOS.init({
 $(function () {
     $(".language h4 a").click(function () {
         $("#language_list").slideToggle(400);
-    })
+    });
 });
