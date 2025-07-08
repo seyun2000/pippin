@@ -24,13 +24,14 @@ a {
 }
 
 h1 {
-    font-family: 'SBAggroB';
+    font-family: 'Pretendard';
     font-size: 64px;
+    font-weight: 900;
 }
 
 h2 {
     color: #5AB2EA;
-    font-family: 'SBAggroB';
+    font-family: 'SBAggroM';
     font-size: 40px;
 }
 
@@ -82,7 +83,7 @@ header {
 
 .header_menu {
     display: flex;
-    font-family: 'SBAggroB';
+    font-family: 'SBAggroM';
     font-size: 20px;
 }
 
@@ -728,7 +729,7 @@ header {
 .play_content h2 {
     width: 350px;
     height: 50px;
-    background: url(../images/games_img/pippinplay/pippinplaylogo.png) no-repeat right 5px;
+    background: url(../images/games_img/pippinplay/pippinplaylogo.png) no-repeat 95% 5px;
     background-size: 40px 42px;
     padding-bottom: 126px;
 }
@@ -1296,7 +1297,12 @@ ul.community_lnb>li.cm_on a {
     opacity: 1;
 }
 
-#community_menu3 a {
+#community_menu3 .story_menu {
+    height: 640px;
+    overflow: hidden;
+}
+
+#community_menu3 .story_menu a {
     display: block;
     position: relative;
     width: 1320px;
@@ -1307,7 +1313,7 @@ ul.community_lnb>li.cm_on a {
     text-align: center;
 }
 
-#community_menu3 a:nth-child(1) {
+#community_menu3 .story_menu .story1 {
     margin-bottom: 30px;
 }
 
@@ -1378,6 +1384,50 @@ ul.community_lnb>li.cm_on a {
 #community_menu3 a:hover .cm3_background {
     background-color: rgba(0, 0, 0, 0.5);
     /* border-radius: 30px; */
+}
+
+.story_btn {
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.story_btn a {
+    display: block;
+}
+
+.story_btn a img {
+    opacity: 50%;
+}
+
+.story_btn a:hover img {
+    opacity: 1;
+}
+
+.story_btnup {
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.story_btnup a {
+    display: none;
+}
+
+.story_btnup a img {
+    opacity: 50%;
+}
+
+.story_btnup a:hover img {
+    opacity: 1;
 }
 
 /* best goods */
