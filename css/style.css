@@ -1114,10 +1114,10 @@ ul.community_lnb>li.cm_on a {
 .event_menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     /* 아래 이걸로 간격 지맘대로 바뀌는 거 수정 */
     align-content: flex-start;
-    gap: 20px 0;
+    gap: 20px 50px;
     height: 830px;
     overflow: hidden;
     padding-top: 5px;
@@ -1153,7 +1153,7 @@ ul.community_lnb>li.cm_on a {
 }
 
 .event_menu li a div:nth-child(2) h3 {
-    padding-top: 25px;
+    padding-top: 20px;
     font-size: 20px;
     font-weight: 500;
     color: #333;
@@ -1173,12 +1173,10 @@ ul.community_lnb>li.cm_on a {
 }
 
 .event_menu li a div:nth-child(2) div {
+    width: 100px;
     position: absolute;
     top: 25px;
     right: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
     gap: 10px 0;
 }
@@ -1299,6 +1297,10 @@ ul.community_lnb>li.cm_on a {
     opacity: 1;
 }
 
+#community_menu3{
+    position: relative;
+}
+
 #community_menu3 .story_menu {
     height: 640px;
     overflow: hidden;
@@ -1393,7 +1395,7 @@ ul.community_lnb>li.cm_on a {
     width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 80px;
+    bottom: -60px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -1415,7 +1417,7 @@ ul.community_lnb>li.cm_on a {
     width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 80px;
+    bottom: -60px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -1631,7 +1633,7 @@ ul.community_lnb>li.cm_on a {
 #faq_sec {
     max-width: 1320px;
     margin: auto;
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 #faq_sec h2 {
@@ -1786,7 +1788,7 @@ ul.community_lnb>li.cm_on a {
 }
 
 .security {
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
 .security h4 {
@@ -1913,15 +1915,20 @@ ul.community_lnb>li.cm_on a {
     position: relative;
 }
 
-#notice h2 {
+#notice .notice_top{
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 20px;
+}
+
+#notice .notice_function{
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
 }
 
 .search2 {
     position: relative;
-    position: absolute;
-    top: 158px;
-    left: 965px;
 }
 
 .search2 input {
@@ -1963,12 +1970,6 @@ ul.community_lnb>li.cm_on a {
 
 .search2 .search_icon2:hover {
     filter: brightness(50%);
-}
-
-.filter {
-    position: absolute;
-    top: 158px;
-    left: 1225px;
 }
 
 .filter button {
