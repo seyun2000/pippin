@@ -947,7 +947,7 @@ header {
 #community {
     max-width: 1320px;
     margin: auto;
-    padding: 250px 0;
+    padding: 150px 0;
 }
 
 #community h2 {
@@ -1634,7 +1634,7 @@ ul.community_lnb>li.cm_on a {
 #faq_sec {
     max-width: 1320px;
     margin: auto;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 #faq_sec h2 {
