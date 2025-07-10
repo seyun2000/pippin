@@ -42,8 +42,10 @@ var visual = new Swiper(".visual", {
 //   <!-- our games - recogames js -->
 // 추천게임 스와이퍼
 var recogm = new Swiper(".recogm", {
-    slidesPerView: "auto",
-    spaceBetween: 35,
+    slidesPerView: "4",
+    spaceBetween: 10,
+    slidesOffsetBefore: 10,
+    slidesOffsetAfter: 10,
     // cssMode: true,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -146,6 +148,25 @@ $(function () {
         $(".event_btn").css('zIndex', '10');
         $(".event_btn a").css('display', 'block');
         $(".event_btnup a").css('display', 'none');
+    });
+});
+
+$(function () {
+    $(".story_btn a").click(function () {
+        $(".story_menu").animate({
+            height: "+=670px"
+        });
+        $(".story_btn").css('zIndex', '-10');
+        $(".story_btn a").css('display', 'none');
+        $(".story_btnup a").css('display', 'block');
+    });
+    $(".story_btnup a").click(function () {
+        $(".story_menu").animate({
+            height: "-=670px"
+        });
+        $(".story_btn").css('zIndex', '10');
+        $(".story_btn a").css('display', 'block');
+        $(".story_btnup a").css('display', 'none');
     });
 });
 

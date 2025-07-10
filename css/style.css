@@ -95,8 +95,7 @@ header {
 }
 
 .header_menu li a:hover {
-    background-color: #5AB2EA;
-    color: #fff;
+    color: #1ea9ff;
 }
 
 .sign {
@@ -2184,10 +2183,10 @@ ul.community_lnb>li.cm_on a {
     bottom: 50px;
     right: 50px;
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     color: #ccc;
     text-align: center;
     font-size: 20px;
@@ -2205,7 +2204,7 @@ ul.community_lnb>li.cm_on a {
 }
 
 .top a:hover img {
-    animation: top_ani 0.5s linear infinite;
+    animation: top_ani 1s linear infinite;
     filter: brightness(1000%);
 }
 
