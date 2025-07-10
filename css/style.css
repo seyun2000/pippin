@@ -100,22 +100,26 @@ header {
 
 .sign {
     display: flex;
-    font-size: 20px;
+}
+
+.sign li a {
+    display: block;
+    text-align: center;
+    width: 70px;
+    /* height: 32px; */
+    padding: 0 3px;
+}
+
+.sign li:nth-child(1) a{
+    font-size: 14px;
+    padding-top: 2px;
 }
 
 .sign li:nth-child(2) a {
     border: #ccc 1px solid;
     border-radius: 100px;
     transition: 0.3s;
-}
-
-.sign li:nth-child(1) a,
-.sign li:nth-child(2) a {
-    display: block;
-    text-align: center;
-    width: 100px;
-    /* height: 32px; */
-    padding: 5px 0 3px;
+    font-size: 16px;
 }
 
 .sign li:nth-child(1) a:hover {
