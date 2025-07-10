@@ -313,6 +313,7 @@ header {
 .games_background {
     padding-top: 150px;
     background-color: #F5F5F5;
+    padding-bottom: 150px;
 }
 
 .games_in {
@@ -946,7 +947,7 @@ header {
 #community {
     max-width: 1320px;
     margin: auto;
-    padding: 150px 0;
+    padding: 250px 0;
 }
 
 #community h2 {
