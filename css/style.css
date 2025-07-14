@@ -2008,11 +2008,12 @@ ul.community_lnb>li.cm_on a {
 
 .filter .filter_option {
     display: none;
-    width: 100%;
     border: 1px solid #ccc;
     box-sizing: border-box;
     text-align: center;
     background-color: #F5F5F5;
+    position: absolute;
+    width: 91px;
 }
 
 .filter .filter_option li a {
