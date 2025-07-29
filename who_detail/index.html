@@ -13,22 +13,24 @@
 
 <body>
     <!-- 헤더 -->
-    <header>
-        <div class="header_in">
-            <a href="../index.html"><img src="../images/header_logo.png" alt="피핀 로고"></a>
-            <ul class="header_menu">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#games">GAMES</a></li>
-                <li><a href="#community">COMMUNITY</a></li>
-                <li><a href="#hiring">HIRING</a></li>
-                <li><a href="#support">SURPPORT</a></li>
-            </ul>
-            <ul class="sign">
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">로그인</a></li>
-            </ul>
-        </div>
-    </header>
+    <div id="header_wrap">
+        <header>
+            <div class="header_in">
+                <a href="../index.html"><img src="../images/header_logo.png" alt="피핀 로고"></a>
+                <ul class="header_menu">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#games">GAMES</a></li>
+                    <li><a href="#community">COMMUNITY</a></li>
+                    <li><a href="#hiring">HIRING</a></li>
+                    <li><a href="#support">SURPPORT</a></li>
+                </ul>
+                <ul class="sign">
+                    <li><a href="#none">회원가입</a></li>
+                    <li><a href="#none">로그인</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
 
     <!-- 비주얼 메인배너 -->
     <div id="visual">
@@ -183,6 +185,24 @@
                     return '<div class="' + className + '"><div><h4>' + (visual_gamename[index]) + '</h4><p>' + (visual_duration[index]) + '</p><h3>' + (visual_headline[index]) + '</h3></div></div>';
                 },
             },
+        });
+
+        // header 스크롤 숨기기
+        let lastScrollTop = 0;
+        const header = document.getElementById("header_wrap");
+
+        window.addEventListener("scroll", function () {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // 아래로 스크롤 → 헤더 숨기기
+                header.style.top = "-80px";
+            } else {
+                // 위로 스크롤 → 헤더 보이기
+                header.style.top = "0";
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // 모바일 bounce 방지
         });
     </script>
 
