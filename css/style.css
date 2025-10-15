@@ -162,8 +162,9 @@ header {
 
 #visual .swiper-slide h1 {
     position: absolute;
-    top: calc(519px - 251px / 2);
-    left: 300px;
+    font-size: 3.3vw;
+    top: 50%;
+    left: 17%;
     color: #fff;
     line-height: 1.35;
 }
@@ -2380,3 +2381,4 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
