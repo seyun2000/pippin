@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--반응형 웹 구현가능하게-->
   <link href="./images/pabicon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/slick.css">
@@ -22,8 +22,18 @@
   <div id="header_wrap">
     <header>
       <div class="header_in">
-        <a href="./index.html"><img src="./images/header_logo.png" alt="피핀 로고"></a>
+        <a href="#none" class="hamburger_btn">
+          <span>메뉴</span>
+        </a>
+        <a href="./index.html" class="logo"><img src="./images/header_logo.png" alt="피핀 로고"></a>
         <ul class="header_menu">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#games">GAMES</a></li>
+          <li><a href="#community">COMMUNITY</a></li>
+          <li><a href="#hiring">HIRING</a></li>
+          <li><a href="#support">SURPPORT</a></li>
+        </ul>
+        <ul class="m_header_menu">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#games">GAMES</a></li>
           <li><a href="#community">COMMUNITY</a></li>
@@ -33,38 +43,52 @@
         <ul class="sign">
           <li><a href="#none">회원가입</a></li>
           <li><a href="#none">로그인</a></li>
+          <li class="mobile_sign"><a href="#none"><img src="./images/m_sign.png" alt="로그인메뉴아이콘"></a></li>
         </ul>
       </div>
     </header>
   </div>
+  <div class="m_header_bg"></div>
 
   <!-- 비주얼 -->
   <div id="visual">
     <div class="swiper visual">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/visual_img/visual1.jpg" alt="펭귄의섬visual">
-          <h1>
-            달콤상큼한 <br>
-            디저트 펭귄 스킨 <br>
-            12종 출시
-          </h1>
+        <div class="swiper-slide v1">
+          <a href="#none">
+            <img src="./images/visual_img/visual1.png" alt="펭귄의섬visual" class="pc_vImage">
+            <img src="./images/visual_img/m_visual1.png" alt="펭귄의섬M_visual" class="m_vImage">
+            <h1>
+              <img src="./images/visual_img/visual_logo1.png" alt="펭귄의섬visual로고">
+              달콤상큼한 <br>
+              디저트 펭귄 스킨 <br>
+              12종 출시
+            </h1>
+          </a>
         </div>
-        <div class="swiper-slide">
-          <img src="./images/visual_img/visual2.jpg" alt="로얄킹덤visual">
-          <h1>
-            구글 플레이 <br>
-            최고의 퍼즐 게임 <br>
-            어워드 수상
-          </h1>
+        <div class="swiper-slide v2">
+          <a href="#none">
+            <img src="./images/visual_img/visual2.png" alt="로얄킹덤visual" class="pc_vImage">
+            <img src="./images/visual_img/m_visual2.png" alt="로얄킹덤M_visual" class="m_vImage">
+            <h1>
+              <img src="./images/visual_img/visual_logo2.png" alt="로얄킹덤visual로고">
+              구글 플레이 <br>
+              최고의 퍼즐 게임 <br>
+              어워드 수상
+            </h1>
+          </a>
         </div>
-        <div class="swiper-slide">
-          <img src="./images/visual_img/visual3.png" alt="블록블라스트visual">
-          <h1>
-            새로운 챌린지 모드 <br>
-            블록 타임어택 <br>
-            업데이트!
-          </h1>
+        <div class="swiper-slide v3">
+          <a href="#none">
+            <img src="./images/visual_img/visual3.png" alt="블록블라스트visual" class="pc_vImage">
+            <img src="./images/visual_img/m_visual3.png" alt="블록블라스트M_visual" class="m_vImage">
+            <h1>
+              <img src="./images/visual_img/visual_logo3.png" alt="블록블라스트visual로고">
+              새로운 챌린지 모드 <br>
+              블록 타임어택 <br>
+              업데이트!
+            </h1>
+          </a>
         </div>
       </div>
       <div class="swiper-pagination">
@@ -86,12 +110,14 @@
       <img data-aos="fade-up" class="about_object1" src="./images/about/about_main/about_main_object.png"
         alt="about 블록 이미지">
     </div>
-    <a data-aos="fade-up" class="about_btn" href="#none">
-      <ul>
-        <li>Are you curious?</li>
-        <li><img src="./images/about/about_main/about_arrow.png" alt="about 버튼 화살표"></li>
-      </ul>
-    </a>
+    <div class="about_btn_wrap">
+      <a data-aos="fade-up" class="about_btn" href="#none">
+        <ul>
+          <li>Are you curious?</li>
+          <li><img src="./images/about/about_main/about_arrow.png" alt="about 버튼 화살표"></li>
+        </ul>
+      </a>
+    </div>
   </div>
 
   <!-- our games -->
@@ -123,7 +149,7 @@
                 <div class="recogm_text">
                   <h5>추천</h5>
                   <h4>로얄킹덤</h4>
-                  <p>건설자의 도움을 받아 왕족에게 걸맞은 왕국을 <br>
+                  <p>건설자의 도움을 받아 왕족에게 걸맞은 왕국을
                     만드세요.</p>
                 </div>
               </a>
@@ -232,10 +258,6 @@
                 <label for="idle" class="button_idlegame">#방치형</label>
               </span>
               <span>
-                <input type="radio" name="genre" id="board">
-                <label for="board" class="button_boardgame">#보드</label>
-              </span>
-              <span>
                 <input type="radio" name="genre" id="mini">
                 <label for="mini" class="button_minigame">#미니게임</label>
               </span>
@@ -247,8 +269,6 @@
                 <input type="radio" name="genre" id="adventure">
                 <label for="adventure" class="button_adventuregame">#어드벤처</label>
               </span>
-            </p>
-            <p>
               <span>
                 <input type="radio" name="genre" id="rpg">
                 <label for="rpg" class="button_rpggame">#RPG</label>
@@ -476,12 +496,12 @@
               </a>
             </li>
           </ul>
-          <p class="viewall">
+          <div class="viewall">
             <a href="#none">view all</a>
-          </p>
-          <p class="viewall_X">
+          </div>
+          <div class="viewall_X">
             <a href="#none">fold up</a>
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -499,8 +519,11 @@
           상점, 피핀캐시 충전 등 다양한 게임 혜택을 <br>
           제공해 드려요.
         </p>
-        <a href="#none" class="googleplay"><img src="./images/games_img/pippinplay/googleplay.png" alt="구글플레이 이미지"></a>
-        <a href="#none" class="appstore"><img src="./images/games_img/pippinplay/appstore.png" alt="앱스토어 이미지"></a>
+        <div class="download_box">
+          <a href="#none" class="googleplay"><img src="./images/games_img/pippinplay/googleplay.png"
+              alt="구글플레이 이미지"></a>
+          <a href="#none" class="appstore"><img src="./images/games_img/pippinplay/appstore.png" alt="앱스토어 이미지"></a>
+        </div>
       </div>
       <div class="phone_content">
         <div class="phone">
@@ -605,6 +628,7 @@
         </ul>
         <a href="#none">자세히 보러가기</a>
       </div>
+      <a href="#none" class="mobile_pippinplay_detail">자세히 보러가기</a>
       <div class="pippin_play_slide_menu">
         <ul class="slider-nav">
           <li>
@@ -1466,28 +1490,30 @@
       <ul class="f_text2">
         <li>© Pippin Korea Inc. All rights reserved.</li>
       </ul>
-      <img src="./images/footer/footer_logo.png" alt="푸터 로고">
-      <div class="float_box">
-        <ul class="f_sns">
-          <li><a href="#none"><img src="./images/footer/youtube.png" alt="유튜브 하이퍼링크"></a></li>
-          <li><a href="#none"><img src="./images/footer/insta.png" alt="인스타 하이퍼링크"></a></li>
-          <li><a href="#none"><img src="./images/footer/X.png" alt="X 하이퍼링크"></a></li>
-          <li><a href="#none"><img src="./images/footer/in.png" alt="IN 하이퍼링크"></a></li>
-        </ul>
-        <ul class="e-mail">
-          <li>
-            <p>Support</p>
-            <h5>support@pippin.com</h5>
-          </li>
-          <li>
-            <p>Business</p>
-            <h5>business@pippin.com</h5>
-          </li>
-          <li>
-            <p>Hire</p>
-            <h5>hire@pippin.com</h5>
-          </li>
-        </ul>
+      <div class="footer_flexbox">
+        <a href="#" class="footer_logo"><img src="./images/footer/footer_logo.png" alt="푸터 로고"></a>
+        <div class="footer_snsbox">
+          <ul class="f_sns">
+            <li><a href="#none"><img src="./images/footer/youtube.png" alt="유튜브 하이퍼링크"></a></li>
+            <li><a href="#none"><img src="./images/footer/insta.png" alt="인스타 하이퍼링크"></a></li>
+            <li><a href="#none"><img src="./images/footer/X.png" alt="X 하이퍼링크"></a></li>
+            <li><a href="#none"><img src="./images/footer/in.png" alt="IN 하이퍼링크"></a></li>
+          </ul>
+          <ul class="e-mail">
+            <li>
+              <p>Support</p>
+              <h5>support@pippin.com</h5>
+            </li>
+            <li>
+              <p>Business</p>
+              <h5>business@pippin.com</h5>
+            </li>
+            <li>
+              <p>Hire</p>
+              <h5>hire@pippin.com</h5>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
@@ -1501,6 +1527,5 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./script/myscript.js"></script>
 </body>
-
 
 </html>
